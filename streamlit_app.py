@@ -21,6 +21,7 @@ def main():
         display_setup_wizard()
     else:
         display_study_hub()
+    print(st.session_state)
 
 def display_setup_wizard():
     st.title("📚 Welcome: Create a New Subject")

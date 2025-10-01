@@ -77,7 +77,10 @@ def generate_topics_from_syllabus(syllabus_text: str) -> Optional[SyllabusTopics
     """
     structured_llm = get_gemini_model(SyllabusTopics)
     if structured_llm:
+        print(syllabus_text)
+        print("-"*25)
         response = invoke_model_with_retry(structured_llm, prompt)
+        print(response)
         # Directly check if the response is the Pydantic model we expect
         if isinstance(response, SyllabusTopics):
             return response
