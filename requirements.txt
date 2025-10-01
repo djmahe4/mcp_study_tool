@@ -1,0 +1,9 @@
+streamlit
+google-generativeai
+pymupdf
+pytesseract
+langchain
+langchain-google-genai
+scikit-learn
+numpy
+pydantic
